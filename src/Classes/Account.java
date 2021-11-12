@@ -24,9 +24,14 @@ public class Account {
     }
     
     public float balance(){
-        return 0;
+        return this.balance;
     }
     
+    /**
+     * Sacar dinero de la cuenta
+     * @param data
+     * @return 
+     */
     public float withdraw(float data){
         return 0;
     }

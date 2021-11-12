@@ -25,18 +25,18 @@ public class AccountTest extends TestCase{
     }
     
     @BeforeClass
-    public static void setUpClass() {
+    public void setUpClass() {
+        this.account1 = new Account(12345); //CUENTA 1 DEL EJEMPLO DE LA PRACTICA
+        this.account2 = new Account(67890); //CUENTA 2 DEL EJEMPLO DE LA PRACTICA
     }
     
     @AfterClass
-    public static void tearDownClass() {
+    public void tearDownClass() {
     }
     
     @Before
     @Override
     public void setUp() {
-        this.account1 = new Account(12345); //CUENTA 1 DEL EJEMPLO DE LA PRACTICA
-        this.account2 = new Account(67890); //CUENTA 2 DEL EJEMPLO DE LA PRACTICA
     }
     
     @After
@@ -51,9 +51,8 @@ public class AccountTest extends TestCase{
     public void testWithdraw() {
         System.out.println("WithDraw-1");
         float data = 0.0F;
-        Account instance = null;
         float expResult = 0.0F;
-        float result = instance.withdraw(data);
+        float result = account1.withdraw(data);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -66,7 +65,6 @@ public class AccountTest extends TestCase{
     public void testDeposit() {
         System.out.println("Deposit-1");
         float data = 0.0F;
-        Account instance = null;
         float expResult = 0.0F;
         float result = instance.deposit(data);
         assertEquals(expResult, result, 0.0);
