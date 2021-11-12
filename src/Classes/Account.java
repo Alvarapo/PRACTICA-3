@@ -23,6 +23,10 @@ public class Account {
         this.idAccount = idAccount;
     }
     
+    public float balance(){
+        return 0;
+    }
+    
     public float withdraw(float data){
         return 0;
     }
