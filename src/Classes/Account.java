@@ -19,7 +19,7 @@ public class Account {
     }
     
     public Account(float initialBalance, int idAccount){
-        this.balance = balance;
+        this.balance = initialBalance;
         this.idAccount = idAccount;
     }
     
